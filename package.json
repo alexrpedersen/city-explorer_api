@@ -1,16 +1,25 @@
 {
-    "name": "server",
-    "version": "1.0.0",
-    "description": "",
-    "main": "server.js",
-    "scripts": {
-      "start": "node server.js"
-    },
-    "keywords": [],
-    "author": "",
-    "license": "ISC",
-    "dependencies": {
-      "dotenv": "^8.2.0",
-      "express": "^4.17.1"
-    }
-  }
+  "name": "server",
+  "version": "1.0.0",
+  "description": "**Author**: Alex Pedersen\r **Version**: 1.0.0 (increment the patch/fix version number if you make more commits past your first submission)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexrpedersen/city-explorer_api.git"
+  },
+  "bugs": {
+    "url": "https://github.com/alexrpedersen/city-explorer_api/issues"
+  },
+  "homepage": "https://github.com/alexrpedersen/city-explorer_api#readme"
+}
