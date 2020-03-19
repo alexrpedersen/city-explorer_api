@@ -30,10 +30,8 @@ app.get('/location', (request, response) => {
 app.get('/location',(request, response) => {
   let city = request.query.city;
   if ((city === '') || (city === null))
-    throw 'Not a valid city';
+    throw 'Not a city';
   console.log('You requested on city: ', city);
-  // console.log('geoKey: ', process.env.GEOCODE_API_KEY);
-  // create url from where we are getting the data using superagent API
   let url = `https://us1.locationiq.com/v1/search.php?key=${process.env.GEOCODE_API_KEY}&q=${city}&format=json`;
   superAgent.get(url)
     .then(superAgentResults =>{
