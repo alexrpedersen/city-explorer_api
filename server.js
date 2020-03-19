@@ -15,14 +15,14 @@ app.use(cors());
 
 const PORT = process.env.PORT || 3001;
 
-app.get('/location', (request, response) => {
-  let city = request.query.city;
-  console.log('city Info', city)
-  let geo = require('./data/geo.json');
-  let location = new Location(city, geo[0])
-  console.log(location)
-  response.send(location);
-});
+//app.get('/location', (request, response) => {
+  //let city = request.query.city;
+  //console.log('city Info', city)
+  //let geo = require('./data/geo.json');
+  //let location = new Location(city, geo[0])
+  //console.log(location)
+  //response.send(location);
+//});
 
 
 // get the data from (file | API) and send it the front end
@@ -64,7 +64,7 @@ app.get('/weather',(request, response) => {
       let arrAllweather = superAgentResults.body.daily.data.map(weatherElement =>{
         return (new Weather(weatherElement));
       });
-      response.send(arrAllweather); // here is where we have to send an araray of objects
+      response.send(arrAllweather); 
     })
     .catch(err => console.log(err));
 
