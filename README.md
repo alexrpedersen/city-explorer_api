@@ -45,8 +45,8 @@ Start time: 10 am
 Finish time: 
 Actual time needed to complete: 
 
-Number and name of feature: lab 6.4 Errors
-Estimate of time needed to complete: 30 min
-Start time: 10 am
-Finish time: 
-Actual time needed to complete: 
+Number and name of feature: lab 7.2
+Estimate of time needed to complete: 2hr
+Start time: 9:35 am
+Finish time: 12:25 pm 
+Actual time needed to complete: 2 hr & 45min
