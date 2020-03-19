@@ -39,6 +39,7 @@ app.get('/location',(request, response) => {
       response.send(location);
     })
     .catch(err => console.log(err));
+});
 
 //bringing in the obj from the api/data files and the city from the user
 
@@ -66,12 +67,12 @@ app.get('/weather',(request, response) => {
     })
     .catch(err => console.log(err));
 
+    //Matches weather above
     function Weather(obj){
       this.time = new Date(obj.time * 1000).toString().slice(0, 15);
       this.forecast = obj.summary;
     }
-    
-
+})
 
     //Trail Stuff
     app.get('/trails',(request, response) => {
@@ -87,7 +88,7 @@ app.get('/weather',(request, response) => {
         .catch(err => console.log(err));
     })
 
-
+    //mathes trail above
     function Trail(obj){
       this.name = obj.name;
       this.location = obj.location;
