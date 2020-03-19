@@ -9,29 +9,19 @@ const app = express();
 const cors = require('cors');
 
 //Iris helped with this part
-const superAgent = require('superagent'); 
+const superAgent = require('superagent');
 
 app.use(cors());
 
 const PORT = process.env.PORT || 3001;
-
-//app.get('/location', (request, response) => {
-  //let city = request.query.city;
-  //console.log('city Info', city)
-  //let geo = require('./data/geo.json');
-  //let location = new Location(city, geo[0])
-  //console.log(location)
-  //response.send(location);
-//});
-
 
 // get the data from (file | API) and send it the front end
 
 app.get('/location',(request, response) => {
   let city = request.query.city;
   if ((city === '') || (city === null))
-    throw 'Not a city';
-  console.log('You requested on city: ', city);
+    throw 'Not a valid city';
+  console.log('You requested: ', city);
   let url = `https://us1.locationiq.com/v1/search.php?key=${process.env.GEOCODE_API_KEY}&q=${city}&format=json`;
   superAgent.get(url)
     .then(superAgentResults =>{
@@ -40,11 +30,10 @@ app.get('/location',(request, response) => {
       response.send(location);
     })
     .catch(err => console.log(err));
-});
+})
 
-//bringing in the obj from the api/data files and the city from the user
-
-function Location(city, obj) {
+// create the Location object
+function Location(obj, city){
   this.search_query = city;
   this.formatted_query = obj.display_name;
   this.latitude = obj.lat;
