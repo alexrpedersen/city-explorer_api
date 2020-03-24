@@ -1,4 +1,4 @@
-//Alex helped out and walked me through this process
+//Alex helped out and walked me through this
 
 'use strict';
 
