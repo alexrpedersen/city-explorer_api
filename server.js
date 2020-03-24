@@ -1,3 +1,5 @@
+//Alex helped out and walked me through this process
+
 'use strict';
 
 require('dotenv').config();
