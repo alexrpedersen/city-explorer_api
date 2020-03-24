@@ -159,3 +159,5 @@ function errorHandler (err, response) {
 app.get('*', (request, response) => {
   response.status(404).send('there is nothing on this page');
 });
+
+app.listen(PORT, () => console.log(`Listening on port ${PORT}`));
