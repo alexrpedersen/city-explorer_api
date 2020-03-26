@@ -10,6 +10,6 @@ CREATE TABLE locations2 (
 );
 
 INSERT INTO locations2 (search_query,formatted_query,latitude,longitude) 
-VALUES ('sumthing','hello', 0, 0);
+VALUES ('bananas','this', 0, 0);
 
 SELECT * FROM locations2;
