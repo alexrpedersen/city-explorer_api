@@ -11,7 +11,7 @@ const PORT = process.env.PORT || 3001;
 
 const client = require('./lib/client');
 const getLocation = require('./lib/getLocation');
-const getMovies = require('./lib/getMovies');
+//const getMovies = require('./lib/getMovies');
 const getTrails= require('./lib/getTrails');
 const getWeather= require('./lib/getWeather');
 
