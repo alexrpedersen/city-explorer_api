@@ -28,7 +28,7 @@ client.on('error', err => console.log(err));
 app.get('/location',getLocation);
 app.get('/weather', getWeather);
 app.get('/trails', getTrails);
-app.get('/movies', getMovies);
+//app.get('/movies', getMovies);
 
 
 
