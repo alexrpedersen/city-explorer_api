@@ -14,7 +14,7 @@ const getLocation = require('./lib/getLocation');
 const getMovies = require('./lib/getMovies');
 const getTrails= require('./lib/getTrails');
 const getWeather= require('./lib/getWeather');
-const getYelp = require('./lib/getYelp');
+
 
 
 
@@ -29,7 +29,7 @@ app.get('/location',getLocation);
 app.get('/weather', getWeather);
 app.get('/trails', getTrails);
 app.get('/movies', getMovies);
-app.get('/yelp', getYelp);
+
 
 
 
